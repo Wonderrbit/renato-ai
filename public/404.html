@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renato AI - Redirecting...</title>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var base = '/renato-ai/';
+      if (path.startsWith(base) && path.length > base.length) {
+        var hashPath = path.slice(base.length - 1);
+        window.location.href = base + '#' + hashPath;
+      } else {
+        window.location.href = base;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecionando...</p>
+</body>
+</html>
