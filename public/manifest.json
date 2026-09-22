@@ -1,0 +1,17 @@
+{
+  "name": "Renato AI — Agente de Crédito",
+  "short_name": "Renato AI",
+  "description": "Seu gerente de crédito digital. Análise humanizada, simulação e recomendação de produtos financeiros.",
+  "start_url": "/renato-ai/",
+  "display": "standalone",
+  "background_color": "#0a0f1c",
+  "theme_color": "#0a0f1c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

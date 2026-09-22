@@ -1,0 +1,52 @@
+.app-layout { display: grid; grid-template-columns: var(--sidebar-width) 1fr; grid-template-rows: auto 1fr; min-height: 100vh; }
+
+.sidebar { position: fixed; top: 0; left: 0; height: 100vh; width: var(--sidebar-width); background: var(--bg-surface); border-right: 1px solid var(--border); z-index: 50; display: flex; flex-direction: column; transition: transform var(--transition-base), width var(--transition-base); overflow-y: auto; }
+
+.sidebar.collapsed { width: var(--sidebar-collapsed); }
+
+.main-content { grid-column: 2; min-height: 100vh; padding: 24px; overflow-y: auto; }
+
+.page { animation: fadeIn var(--transition-base) ease; }
+
+.page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 16px; }
+.page-title { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+.page-subtitle { color: var(--text-secondary); font-size: 14px; margin-top: 4px; }
+
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-16 { gap: 16px; }
+.gap-24 { gap: 24px; }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+@media (max-width: 1024px) {
+  .sidebar { transform: translateX(-100%); width: var(--sidebar-width); }
+  .sidebar.open { transform: translateX(0); }
+  .main-content { grid-column: 1; padding: 16px; padding-bottom: 100px; }
+  .grid-4, .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .page-header { flex-direction: column; align-items: flex-start; }
+  .page-title { font-size: 20px; }
+}
+
+.sidebar-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px); z-index: 40; opacity: 0; visibility: hidden; transition: all var(--transition-base); }
+.sidebar-overlay.visible { opacity: 1; visibility: visible; }
+
+.container { width: 100%; max-width: 1400px; margin: 0 auto; }
+.section { margin-bottom: 32px; }
+.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.section-title { font-size: 18px; font-weight: 600; }
