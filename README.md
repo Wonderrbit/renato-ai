@@ -2,7 +2,7 @@
 
 > **Renato**, 47 anos, 22 anos de experiência em crédito bancário. Seu gerente digital que conversa como gente, analisa com precisão e recomenda o que cabe no seu bolso.
 
-## 🎯 Visão Geral
+ Visão Geral
 
 Renato AI é um agente de análise de risco de crédito ao consumidor que combina:
 
@@ -11,28 +11,28 @@ Renato AI é um agente de análise de risco de crédito ao consumidor que combin
 - **Persona Humanizada**: "Renato" usa metacognição, empatia financeira e memória relacional
 - **Auto-aprendizado**: Feedback loop contínuo com A/B testing e retreinamento de modelos
 
-## ✨ Funcionalidades
+ Funcionalidades
 
-### 🤖 Chat com Renato
+ Chat com Renato
 - Conversa natural em PT-BR: "Fala! Sou o Renato...", "Bora ver isso aí", "Fechou?"
 - Metacognição visível: "Pera, deixa eu processar...", "Hum, isso muda a análise"
 - Memória relacional: "Lembra daquela viagem que você planejava?"
 - Formulário step-by-step para coleta de dados
 
-### 📊 Dashboard Analítico
+ Dashboard Analítico
 - Gauge meter SVG animado (0-1000)
 - Radar chart dos 8 fatores de scoring (Chart.js)
 - KPIs: PD estimada, comprometimento, margem disponível, score
 - Tabela de fatores com impactos positivos/negativos
 - Produtos recomendados com taxas e limites personalizados
 
-### 🔮 Simulador What-If
+ Simulador What-If
 - Sliders em tempo real para todos os 8 fatores
 - Delta de score instantâneo
 - Stress test: Perda de emprego, Aumento de juros, Nova inadimplência
 - Comparação de cenários lado a lado
 
-### 🧠 Credit Engine (8 Fatores)
+ Credit Engine (8 Fatores)
 | Fator | Peso | Lógica |
 |-------|------|--------|
 | Score Bureau | 25% | Normalizado linear 0-1000 |
@@ -44,7 +44,7 @@ Renato AI é um agente de análise de risco de crédito ao consumidor que combin
 | Tipo Renda | 5% | CLT=90, Aposentado=85, Autônomo=60, Informal=30 |
 | Consultas Bureau | 5% | 0-2=ótimo, 3-5=ok, >5=ruim |
 
-### 📦 Produtos de Crédito
+ Produtos de Crédito
 - Crédito Pessoal (2.5% a.m., score ≥500)
 - Cartão de Crédito (14% rotativo, score ≥550)
 - Consignado (1.5% a.m., score ≥350)
@@ -52,7 +52,7 @@ Renato AI é um agente de análise de risco de crédito ao consumidor que combin
 - Financiamento Veicular (1.8% a.m., score ≥600)
 - CDC (2.2% a.m., score ≥500)
 
-## 🚀 Quick Start
+ Quick Start
 
 ```bash
 # Clone e instale
@@ -70,7 +70,7 @@ npm run build
 npm run deploy
 ```
 
-## 🏗️ Arquitetura
+ Arquitetura
 
 ```
 renato-ai/
@@ -102,7 +102,7 @@ renato-ai/
 └── public/               # Assets estáticos
 ```
 
-## 🧬 Persona: Renato
+##  Persona: Renato
 
 ```
 "Fala! Sou o Renato, 22 anos de balcão de banco, agora por conta.
@@ -134,7 +134,7 @@ FRONTEND_URL=https://user.github.io/renato-ai
 - `SESSION_SECRET`
 - `WS_URL` (WebSocket backend URL)
 
-## 📦 Deploy
+ Deploy
 
 ### Frontend (GitHub Pages)
 1. Habilite GitHub Pages nas settings do repo
@@ -148,7 +148,7 @@ docker build -t renato-ai-backend .
 # Deploy na plataforma de escolha
 ```
 
-## 🧪 Testes
+## Testes
 
 ```bash
 # E2E com Playwright
@@ -161,13 +161,13 @@ npm run lint
 npm run typecheck
 ```
 
-## 📚 Documentação
+##  Documentação
 
 - [Plano Completo](plano.md) — Arquitetura, fases, tarefas detalhadas
 - [API Backend](backend/README.md) — Endpoints, WebSocket, ferramentas
 - [TF.js Models](src/engine/tf-*.js) — Modelos neurais client-side
 
-## 🤝 Contribuindo
+##  Contribuindo
 
 1. Fork o projeto
 2. Crie branch: `git checkout -b feat/nova-funcionalidade`
@@ -175,12 +175,12 @@ npm run typecheck
 4. Push: `git push origin feat/nova-funcionalidade`
 5. Abra Pull Request
 
-## 📄 Licença
+##  Licença
 
 MIT — Veja [LICENSE](LICENSE) para detalhes.
 
 ---
 
-**Desenvolvido com** ☕ **e** 🤖 **para democratizar crédito justo e transparente.**
+**Desenvolvido com**  **e**  **para democratizar crédito justo e transparente.**
 
 > *"Crédito não é favor, é ferramenta. Usada com inteligência, realiza sonhos."* — Renato
